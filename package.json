@@ -1,0 +1,22 @@
+{
+  "name": "sort-unique",
+  "version": "1.0.0",
+  "description": "Sorts an array, removing all duplicate elements",
+  "repository": "https://github.com/Bluefire2/sort-unique.git",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha --reporter spec",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/* --timeout 300000"
+  },
+  "author": "Kyrylo Chernyshov <kc875@cornell.edu>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0"
+  }
+}
