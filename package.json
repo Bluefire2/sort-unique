@@ -6,6 +6,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "prepublishOnly": "npm run build",
     "test": "mocha --reporter spec",
     "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/* --timeout 300000"
   },
